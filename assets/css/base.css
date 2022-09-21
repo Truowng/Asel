@@ -1,0 +1,30 @@
+:root {
+  --white: #fff;
+  --black: #000;
+  --border: #cdcdcd;
+}
+
+@font-face {
+  font-family: Ortica;
+  src: url(../fonts/Ortica/desktop/Ortica-Light.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  font-size: 62.5%;
+  font-family: Ortica;
+  overflow-x: hidden;
+  background-color: #fff;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
