@@ -10,18 +10,7 @@ const serviceImagesSource = [
 const serviceContainer = document.querySelector(".service-container");
 const serviceWrapper = document.querySelector(".service-wrapper");
 const serviceImageContainers = document.querySelectorAll(".service-item-image");
-// const serviceItemHeaderContentNumbers = document.querySelectorAll(
-//   ".service-item-header-content-number"
-// );
-// const serviceItemHeaderContentTitles = document.querySelectorAll(
-//   ".service-item-header-content-title"
-// );
-// const serviceItemDescriptionContents = document.querySelectorAll(
-//   ".service-item-description-content"
-// );
-// const serviceItemViewMoreLinks = document.querySelectorAll(
-//   ".service-item-viewmore-link"
-// );
+
 let serviceWrapperWidth;
 let serviceContainerHeight;
 let serviceWrapperCurrent = 0;
@@ -56,33 +45,9 @@ function serviceWrapperAnimate() {
   setTransform(serviceWrapper, `translateX(-${serviceWrapperCurrent}px)`);
   serviceImageContainers.forEach((serviceImageContainer) => {
     serviceImageContainer.style.backgroundPosition = `-${
-      serviceWrapperCurrent / 15
+      serviceWrapperCurrent / 12
     }px, center`;
   });
-  //   serviceItemHeaderContentNumbers.forEach((serviceItemHeaderContentNumber) => {
-  //     setTransform(
-  //       serviceItemHeaderContentNumber,
-  //       `translateX(-${serviceWrapperCurrent / 20}px)`
-  //     );
-  //   });
-  //   serviceItemHeaderContentTitles.forEach((serviceItemHeaderContentTitle) => {
-  //     setTransform(
-  //       serviceItemHeaderContentTitle,
-  //       `translateX(-${serviceWrapperCurrent / 20}px)`
-  //     );
-  //   });
-  //   serviceItemDescriptionContents.forEach((serviceItemDescriptionContent) => {
-  //     setTransform(
-  //       serviceItemDescriptionContent,
-  //       `translateX(-${serviceWrapperCurrent / 20}px)`
-  //     );
-  //   });
-  //   serviceItemViewMoreLinks.forEach((serviceItemViewMoreLink) => {
-  //     setTransform(
-  //       serviceItemViewMoreLink,
-  //       `translateX(-${serviceWrapperCurrent / 20}px)`
-  //     );
-  //   });
 
   requestAnimationFrame(serviceWrapperAnimate);
 }

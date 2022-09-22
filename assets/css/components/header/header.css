@@ -44,6 +44,8 @@
 }
 
 .header-menu-button-icon {
-  font-size: 2vw;
+  font-size: 3vw;
   color: var(--white);
+  font-family: PPEiko;
+  font-weight: 100;
 }

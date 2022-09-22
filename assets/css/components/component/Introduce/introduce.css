@@ -20,9 +20,9 @@
 }
 
 .introduce-left-container {
-  flex: 1;
+  flex: 1.5;
   margin: 2vw;
-  margin-top: 50vh;
+  margin-top: 100vh;
   margin-right: 0;
   display: flex;
   flex-direction: column;
@@ -32,6 +32,8 @@
   margin-bottom: 10vh;
   position: relative;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .introduce-left-content-heading {
@@ -40,6 +42,7 @@
   margin-bottom: 1vh;
   color: var(--white);
   font-weight: 100;
+  align-self: center;
 }
 
 .introduce-left-content-description {
@@ -47,8 +50,9 @@
   font-family: PPEiko;
   color: var(--white);
   font-weight: 100;
-  width: 80%;
-  text-align: right;
+  width: 50%;
+  text-align: justify;
+  align-self: flex-end;
 }
 
 .introduce-left-image {
@@ -57,7 +61,7 @@
   background-size: cover;
   background-position: center center;
   width: 100%;
-  height: 50vh;
+  height: 80vh;
   align-self: flex-end;
   position: relative;
   z-index: 1;
@@ -79,7 +83,7 @@
 }
 
 .introduce-right-container {
-  flex: 1.25;
+  flex: 1;
   margin: 2vw;
   position: relative;
 }
