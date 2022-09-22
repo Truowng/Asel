@@ -11,7 +11,7 @@
 .introduce-separate-text {
   font-size: 20vw;
   position: absolute;
-  top: -20%;
+  top: -30vh;
   color: var(--white);
   font-family: PPEiko;
   text-transform: uppercase;
