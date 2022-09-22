@@ -1,0 +1,96 @@
+.introduce-container {
+  width: 100vw;
+  height: 200vh;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--background);
+}
+
+.introduce-separate-text {
+  font-size: 20vw;
+  position: absolute;
+  top: -20%;
+  color: var(--white);
+  font-family: PPEiko;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 100;
+}
+
+.introduce-left-container {
+  flex: 1;
+  margin: 2vw;
+  margin-top: 50vh;
+  margin-right: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.introduce-left-content {
+  margin-bottom: 10vh;
+  position: relative;
+  z-index: 1;
+}
+
+.introduce-left-content-heading {
+  font-size: 3vw;
+  font-family: PPEiko;
+  margin-bottom: 1vh;
+  color: var(--white);
+  font-weight: 100;
+}
+
+.introduce-left-content-description {
+  font-size: 1.2vw;
+  font-family: PPEiko;
+  color: var(--white);
+  font-weight: 100;
+  width: 80%;
+  text-align: right;
+}
+
+.introduce-left-image {
+  background-image: url("https://images.unsplash.com/photo-1495754149474-e54c07932677?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 50vh;
+  align-self: flex-end;
+  position: relative;
+  z-index: 1;
+  transform: translateX(10%);
+}
+
+.introduce-left-container::after {
+  content: "";
+  position: absolute;
+  width: 35%;
+  height: 20%;
+  right: 51%;
+  background-image: url("https://images.unsplash.com/photo-1578112010316-b44c50d27b2b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 14%;
+  z-index: 0;
+}
+
+.introduce-right-container {
+  flex: 1.25;
+  margin: 2vw;
+  position: relative;
+}
+
+.introduce-right-image {
+  background-image: url("https://images.unsplash.com/photo-1599696848652-f0ff23bc911f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center center;
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  z-index: 1;
+}

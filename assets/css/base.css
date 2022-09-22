@@ -2,11 +2,18 @@
   --white: #fff;
   --black: #000;
   --border: #cdcdcd;
+  /* --background: #a68975; */
+  --background: #86634b;
 }
 
 @font-face {
   font-family: Ortica;
   src: url(../fonts/Ortica/desktop/Ortica-Light.otf);
+}
+
+@font-face {
+  font-family: PPEiko;
+  src: url(../fonts/PPEiko/ppeiko-thin.otf);
 }
 
 * {
@@ -20,7 +27,7 @@ html {
   font-size: 62.5%;
   font-family: Ortica;
   overflow-x: hidden;
-  background-color: #fff;
+  background-color: var(--background);
   scroll-behavior: smooth;
 }
 
@@ -28,3 +35,5 @@ a {
   text-decoration: none;
   color: var(--black);
 }
+
+/* Animation */
