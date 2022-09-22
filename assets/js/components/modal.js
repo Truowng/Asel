@@ -12,7 +12,8 @@ function show() {
   modalContainer.style.transform = "translateX(0)";
   menuItems.forEach((menuItem) => {
     menuItem.style.transform = "translateY(0)";
-    menuItem.style.transition = "all 1s cubic-bezier(0.77, 0, 0.175, 1) 0.65s";
+    menuItem.style.transition =
+      "all 0.75s cubic-bezier(0.77, 0, 0.175, 1) 0.3s";
   });
 }
 

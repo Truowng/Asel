@@ -15,7 +15,7 @@ let serviceWrapperWidth;
 let serviceContainerHeight;
 let serviceWrapperCurrent = 0;
 let serviceWrapperTarget = 0;
-let serviceWrapperEase = 0.1;
+let serviceWrapperEase = 0.15;
 
 serviceImageContainers.forEach((serviceImageContainer, index) => {
   serviceImageContainer.style.backgroundImage = `url(${serviceImagesSource[index]})`;
