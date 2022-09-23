@@ -5,6 +5,7 @@
   /* --background: #a68975; */
   --background: #86634b;
   --background-2: #3c241c;
+  --background-white: #f6e8e8;
 }
 
 @font-face {
@@ -23,8 +24,12 @@
   box-sizing: border-box;
 }
 
-body,
 html {
+  scroll-behavior: smooth;
+  overscroll-behavior: auto;
+}
+
+body {
   font-size: 62.5%;
   font-family: Ortica;
   overflow-x: hidden;
@@ -33,7 +38,8 @@ html {
 }
 
 body::-webkit-scrollbar {
-  width: 1rem;
+  width: 0.8rem;
+  background-color: transparent;
 }
 
 body::-webkit-scrollbar-thumb {

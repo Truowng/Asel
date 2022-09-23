@@ -4,14 +4,14 @@
   justify-content: space-between;
   position: absolute;
   width: 100vw;
-  height: 8rem;
+  height: 5rem;
   border-bottom: 0.1rem solid var(--border);
   z-index: 5;
   /* mix-blend-mode: difference; */
 }
 
 .header-logo {
-  width: 25rem;
+  width: 15rem;
   height: 100%;
   overflow: hidden;
   justify-content: center;
@@ -34,7 +34,7 @@
 }
 
 .header-menu-button-container {
-  width: 17rem;
+  width: 12rem;
   height: 100%;
   border-left: 0.1rem solid var(--border);
   display: flex;
