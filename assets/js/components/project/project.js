@@ -12,7 +12,7 @@ const projectImageSources = [
 const projectItems = document.querySelectorAll(".project-item-container");
 let projectItemCurrent = 0;
 let projectItemTarget = 0;
-let projectItemEase = 0.08;
+let projectItemEase = 0.03;
 
 function lerp(start, end, t) {
   return start * (1 - t) + end * t;
