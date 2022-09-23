@@ -29,10 +29,7 @@ function projectItemAnimate() {
   projectItemTarget = window.scrollY;
   projectItems.forEach((projectItem, index) => {
     projectItem.style.backgroundImage = `url(${projectImageSources[index]})`;
-    setTransform(projectItem, `translateY(-${projectItemCurrent / 10}px)`);
-    // projectItem.style.backgroundPosition = ` center -${
-    //   projectItemCurrent / 10
-    // }px`;
+    setTransform(projectItem, `translateY(-${projectItemCurrent / 8}px)`);
   });
   requestAnimationFrame(projectItemAnimate);
 }
