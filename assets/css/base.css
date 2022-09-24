@@ -18,6 +18,12 @@
   src: url(../fonts/PPEiko/ppeiko-thin.otf);
 }
 
+@font-face {
+  font-family: IvyMode;
+  src: url(../fonts/IvyMode/IvyMode-WOFF/IvyMode-Thin.ttf);
+  font-weight: 100;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -38,8 +44,7 @@ body {
 }
 
 body::-webkit-scrollbar {
-  width: 0.8rem;
-  background-color: transparent;
+  display: none;
 }
 
 body::-webkit-scrollbar-thumb {

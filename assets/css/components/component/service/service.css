@@ -59,10 +59,11 @@
 }
 .service-item-header-content-title {
   font-size: 8vw;
-  font-family: PPEiko;
+  font-family: IvyMode;
   position: relative;
   z-index: 1;
   color: var(--white);
+  text-transform: uppercase;
 }
 
 .service-item-description-content-container {

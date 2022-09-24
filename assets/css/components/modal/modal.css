@@ -34,6 +34,7 @@
   letter-spacing: 0.2rem;
   text-transform: uppercase;
   color: var(--background-2);
+  font-family: IvyMode;
 }
 
 .header-modal-menu-button-container {
@@ -74,6 +75,7 @@
 .menu-item span {
   display: block;
   transform: translateY(100%);
+  font-family: IvyMode;
 }
 
 .menu-item::after {

@@ -58,18 +58,5 @@
 .project-item-container:nth-of-type(3),
 .project-item-container:nth-of-type(4),
 .project-item-container:nth-of-type(7) {
-  /* z-index: -1; */
   background-position: center;
-}
-
-.project-name {
-  font-size: 3vw;
-  font-family: PPEiko;
-  font-weight: 100;
-  color: var(--white);
-  background-color: rgba(0, 0, 0, 0.2);
-  backdrop-filter: blur(0.5rem);
-  padding: 0 1%;
-  border: 0.1rem solid var(--white);
-  display: none;
 }

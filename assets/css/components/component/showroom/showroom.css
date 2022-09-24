@@ -1,0 +1,88 @@
+.showroom-image-container {
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+  border-top: 0.1rem solid var(--white);
+  position: relative;
+  padding: 2vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.showroom-image-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  /* background-image: url("https://images.unsplash.com/photo-1632829882891-5047ccc421bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80"); */
+  background-image: url("https://images.unsplash.com/photo-1634547588713-edd93045b9f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1400&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all ease 0.3s;
+}
+
+.showroom-image-container:hover::after {
+  opacity: 1;
+}
+
+.showroom-image-container:hover .showroom-image-title {
+  color: var(--background-2);
+  letter-spacing: 3rem;
+  border: 0.1rem solid var(--background-2);
+  backdrop-filter: blur(20px);
+}
+
+.showroom-image-title {
+  font-size: 10vw;
+  font-family: IvyMode;
+  display: block;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  font-weight: 100;
+  color: var(--white);
+  text-transform: uppercase;
+  transition: all ease 0.3s, backdrop-filter 0s;
+  padding: 0 1%;
+}
+
+.showroom-list-item {
+  list-style: none;
+  border-top: 0.1rem solid var(--white);
+  margin: 0 3vw;
+  position: relative;
+}
+
+.showroom-list-item:nth-of-type(2n) {
+  text-align: right;
+}
+
+.showroom-list-item-link {
+  text-transform: uppercase;
+  font-size: 6vw;
+  font-family: IvyMode;
+  color: var(--white);
+  width: 100%;
+  display: block;
+  position: relative;
+  z-index: 9;
+}
+
+.showroom-list-item-image {
+  position: fixed;
+  transform: translate(-50%, -50%);
+  left: 10px;
+  top: 10px;
+  width: 50vw;
+  height: 0;
+  z-index: 8;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: height cubic-bezier(0.77, 0, 0.175, 1) 0.2s;
+}

@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
   <body>
+    <!-- Cursor  -->
+    <div class="inner-cursor"></div>
+    <div class="outer-cursor"></div>
     <!-- Modal -->
     <div class="modal-container">
       <div class="header-modal-container">
@@ -27,19 +30,19 @@
         </div>
       </div>
       <div class="menu-container">
-        <a href="#" class="menu-item">
+        <a href="#service" class="menu-item">
           <span> Service. </span>
         </a>
-        <a href="#" class="menu-item">
+        <a href="#project" class="menu-item">
           <span> Project. </span>
         </a>
-        <a href="#" class="menu-item">
+        <a href="#product" class="menu-item">
           <span> Product. </span>
         </a>
-        <a href="#" class="menu-item">
+        <a href="#showroom" class="menu-item">
           <span> Showroom. </span>
         </a>
-        <a href="#" class="menu-item">
+        <a href="#library" class="menu-item">
           <span> Library. </span>
         </a>
       </div>
@@ -97,7 +100,7 @@
         </div>
       </div>
       <!-- Service -->
-      <div class="service-container">
+      <div id="service" class="service-container">
         <div class="service-wrapper">
           <div class="service-item-container"></div>
           <div class="service-item-container"></div>
@@ -202,7 +205,7 @@
           </div>
         </div>
       </div>
-      <div class="project-container">
+      <div id="project" class="project-container">
         <div class="project-sticky-title-container">
           <h1 class="project-title">
             "We believe that the quality of our surroundings has a direct
@@ -210,31 +213,41 @@
           </h1>
         </div>
         <div class="project-item-wrapper">
-          <div class="project-item-container">
-            <p class="project-name">Crestron</p>
-          </div>
-          <div class="project-item-container">
-            <p class="project-name">Crestron</p>
-          </div>
-          <div class="project-item-container">
-            <p class="project-name">Crestron</p>
-          </div>
-          <div class="project-item-container">
-            <p class="project-name">Crestron</p>
-          </div>
-          <div class="project-item-container">
-            <p class="project-name">Crestron</p>
-          </div>
-          <div class="project-item-container">
-            <p class="project-name">Crestron</p>
-          </div>
-          <div class="project-item-container">
-            <p class="project-name">Crestron</p>
-          </div>
-          <div class="project-item-container">
-            <p class="project-name">Crestron</p>
-          </div>
+          <div class="project-item-container"></div>
+          <div class="project-item-container"></div>
+          <div class="project-item-container"></div>
+          <div class="project-item-container"></div>
+          <div class="project-item-container"></div>
+          <div class="project-item-container"></div>
+          <div class="project-item-container"></div>
+          <div class="project-item-container"></div>
         </div>
+      </div>
+      <div id="showroom" class="showroom-container">
+        <div class="showroom-image-container">
+          <h1 class="showroom-image-title">showroom</h1>
+        </div>
+        <ul class="showroom-list">
+          <div class="showroom-list-item-image"></div>
+          <li class="showroom-list-item">
+            <a href="#" class="showroom-list-item-link">Moroso</a>
+          </li>
+          <li class="showroom-list-item">
+            <a href="#" class="showroom-list-item-link">Wall & deco</a>
+          </li>
+          <li class="showroom-list-item">
+            <a href="#" class="showroom-list-item-link">Nanimarquina</a>
+          </li>
+          <li class="showroom-list-item">
+            <a href="#" class="showroom-list-item-link">Porro</a>
+          </li>
+          <li class="showroom-list-item">
+            <a href="#" class="showroom-list-item-link">Fantoni</a>
+          </li>
+          <li class="showroom-list-item">
+            <a href="#" class="showroom-list-item-link">Diesel with Moroso</a>
+          </li>
+        </ul>
       </div>
     </div>
     <script
@@ -278,5 +291,7 @@
     <script src="./assets/js/components/service/service.js"></script>
     <script src="./assets/js/components/project/project.js"></script>
     <script src="./assets/js/components/modal.js"></script>
+    <script src="./assets/js/components/cursor.js"></script>
+    <script src="./assets/js/components/showroom/showroom.js"></script>
   </body>
 </html>

@@ -13,7 +13,7 @@
   position: absolute;
   top: -30vh;
   color: var(--white);
-  font-family: PPEiko;
+  font-family: IvyMode;
   text-transform: uppercase;
   text-align: center;
   font-weight: 100;
@@ -43,6 +43,7 @@
   color: var(--white);
   font-weight: 100;
   align-self: center;
+  font-family: IvyMode;
 }
 
 .introduce-left-content-description {

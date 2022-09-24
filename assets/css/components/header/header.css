@@ -27,6 +27,7 @@
   letter-spacing: 0.2rem;
   text-transform: uppercase;
   mix-blend-mode: difference;
+  font-family: IvyMode;
 }
 
 .header-logo-img {
