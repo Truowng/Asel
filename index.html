@@ -14,7 +14,7 @@
     />
     <link rel="stylesheet" href="./assets/css/main.css" />
   </head>
-  <body>
+  <body data-scrollbar>
     <!-- Cursor  -->
     <div class="inner-cursor"></div>
     <div class="outer-cursor"></div>
@@ -49,208 +49,212 @@
     </div>
 
     <!-- Header -->
-
-    <div class="header-container">
-      <div class="header-logo">
-        <a href="#" class="header-logo-link"> ASEL </a>
+    <div id="my-scrollbar" data-scrollbar>
+      <div class="header-container">
+        <div class="header-logo">
+          <a href="#" class="header-logo-link"> ASEL </a>
+        </div>
+        <div class="header-menu-button-container">
+          <!-- <i class="fa-solid fa-bars header-menu-button-icon"></i> -->
+          <p class="header-menu-button-icon">&equiv;</p>
+        </div>
       </div>
-      <div class="header-menu-button-container">
-        <!-- <i class="fa-solid fa-bars header-menu-button-icon"></i> -->
-        <p class="header-menu-button-icon">&equiv;</p>
+
+      <!-- Content -->
+      <div class="content-container">
+        <!-- Video -->
+        <div class="video-banner-container">
+          <video
+            autoplay
+            muted
+            loop
+            src="./assets/video/introduce-video.mp4"
+            class="video-banner"
+          ></video>
+          <!-- <video
+        autoplay
+        muted
+        loop
+        src="https://player.vimeo.com/external/427658535.hd.mp4?s=01676f273d9b53ef124a33aaa8e4276d97df80ae&profile_id=175"
+        class="video-banner"
+      ></video> -->
+          <p class="video-banner-text">Design. Build. Live.</p>
+        </div>
+        <!-- Introduce -->
+        <div class="introduce-container">
+          <h1 class="introduce-separate-text">Introduce</h1>
+          <div class="introduce-left-container">
+            <div class="introduce-left-content">
+              <h2 class="introduce-left-content-heading">
+                Design. Build. Live.
+              </h2>
+              <p class="introduce-left-content-description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptates suscipit in quasi! Labore quidem nulla hic illo ipsam
+                cum eligendi vitae, sapiente dolor sit amet dolores porro,
+                doloribus quam optio libero, laudantium quisquam suscipit in
+                quasi!
+              </p>
+            </div>
+            <div class="introduce-left-image"></div>
+          </div>
+          <div class="introduce-right-container">
+            <div class="introduce-right-image"></div>
+          </div>
+        </div>
+        <!-- Service -->
+        <div id="service" class="service-container">
+          <div class="service-wrapper">
+            <div class="service-item-container"></div>
+            <div class="service-item-container"></div>
+            <div class="service-item-container">
+              <div class="service-item-header-content-container"></div>
+            </div>
+            <div class="service-item-container">
+              <div class="service-item-image"></div>
+              <div class="service-item-header-content-container">
+                <h1 class="service-item-header-content-number">01.</h1>
+                <p class="service-item-header-content-title">Lightning</p>
+              </div>
+              <div class="service-item-description-content-container">
+                <p class="service-item-description-content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <a href="#" class="service-item-viewmore-link"
+                  >View more
+                  <span> &rarr;</span>
+                </a>
+              </div>
+            </div>
+            <div class="service-item-container">
+              <div class="service-item-image"></div>
+              <div class="service-item-header-content-container">
+                <h1 class="service-item-header-content-number">02.</h1>
+                <p class="service-item-header-content-title">Secure</p>
+              </div>
+              <div class="service-item-description-content-container">
+                <p class="service-item-description-content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <a href="#" class="service-item-viewmore-link"
+                  >View more
+                  <span> &rarr;</span>
+                </a>
+              </div>
+            </div>
+            <div class="service-item-container">
+              <div class="service-item-image"></div>
+              <div class="service-item-header-content-container">
+                <h1 class="service-item-header-content-number">03.</h1>
+                <p class="service-item-header-content-title">Remote</p>
+              </div>
+              <div class="service-item-description-content-container">
+                <p class="service-item-description-content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <a href="#" class="service-item-viewmore-link"
+                  >View more
+                  <span> &rarr;</span>
+                </a>
+              </div>
+            </div>
+            <div class="service-item-container">
+              <div class="service-item-image"></div>
+              <div class="service-item-header-content-container">
+                <h1 class="service-item-header-content-number">04.</h1>
+                <p class="service-item-header-content-title">Sound</p>
+              </div>
+              <div class="service-item-description-content-container">
+                <p class="service-item-description-content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <a href="#" class="service-item-viewmore-link"
+                  >View more
+                  <span> &rarr;</span>
+                </a>
+              </div>
+            </div>
+            <div class="service-item-container">
+              <div class="service-item-image"></div>
+              <div class="service-item-header-content-container">
+                <h1 class="service-item-header-content-number">05.</h1>
+                <p class="service-item-header-content-title">Movie</p>
+              </div>
+              <div class="service-item-description-content-container">
+                <p class="service-item-description-content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <a href="#" class="service-item-viewmore-link"
+                  >View more
+                  <span> &rarr;</span>
+                </a>
+              </div>
+            </div>
+            <div class="service-item-container">
+              <div class="service-item-image"></div>
+              <div class="service-item-header-content-container">
+                <h1 class="service-item-header-content-number">06.</h1>
+                <p class="service-item-header-content-title">Curtain</p>
+              </div>
+              <div class="service-item-description-content-container">
+                <p class="service-item-description-content">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                </p>
+                <a href="#" class="service-item-viewmore-link"
+                  >View more
+                  <span> &rarr;</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="project" class="project-container">
+          <div class="project-sticky-title-container">
+            <h1 class="project-title">
+              "We believe that the quality of our surroundings has a direct
+              influence on the quality of our lives"
+            </h1>
+          </div>
+          <div class="project-item-wrapper">
+            <a href="#" class="project-item-container"></a>
+            <a href="#" class="project-item-container"></a>
+            <a href="#" class="project-item-container"></a>
+            <a href="#" class="project-item-container"></a>
+            <a href="#" class="project-item-container"></a>
+            <a href="#" class="project-item-container"></a>
+            <a href="#" class="project-item-container"></a>
+            <a href="#" class="project-item-container"></a>
+          </div>
+        </div>
+        <div id="showroom" class="showroom-container">
+          <div class="showroom-image-container">
+            <h1 class="showroom-image-title">showroom</h1>
+          </div>
+          <ul class="showroom-list">
+            <div class="showroom-list-item-image"></div>
+            <li class="showroom-list-item">
+              <a href="#" class="showroom-list-item-link">Moroso</a>
+            </li>
+            <li class="showroom-list-item">
+              <a href="#" class="showroom-list-item-link">Wall & deco</a>
+            </li>
+            <li class="showroom-list-item">
+              <a href="#" class="showroom-list-item-link">Nanimarquina</a>
+            </li>
+            <li class="showroom-list-item">
+              <a href="#" class="showroom-list-item-link">Porro</a>
+            </li>
+            <li class="showroom-list-item">
+              <a href="#" class="showroom-list-item-link">Fantoni</a>
+            </li>
+            <li class="showroom-list-item">
+              <a href="#" class="showroom-list-item-link">Diesel with Moroso</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
 
-    <!-- Content -->
-    <div class="content-container">
-      <!-- Video -->
-      <div class="video-banner-container">
-        <video
-          autoplay
-          muted
-          loop
-          src="./assets/video/introduce-video.mp4"
-          class="video-banner"
-        ></video>
-        <!-- <video
-          autoplay
-          muted
-          loop
-          src="https://player.vimeo.com/external/427658535.hd.mp4?s=01676f273d9b53ef124a33aaa8e4276d97df80ae&profile_id=175"
-          class="video-banner"
-        ></video> -->
-        <p class="video-banner-text">Design. Build. Live.</p>
-      </div>
-      <!-- Introduce -->
-      <div class="introduce-container">
-        <h1 class="introduce-separate-text">Introduce</h1>
-        <div class="introduce-left-container">
-          <div class="introduce-left-content">
-            <h2 class="introduce-left-content-heading">Design. Build. Live.</h2>
-            <p class="introduce-left-content-description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptates suscipit in quasi! Labore quidem nulla hic illo ipsam
-              cum eligendi vitae, sapiente dolor sit amet dolores porro,
-              doloribus quam optio libero, laudantium quisquam suscipit in
-              quasi!
-            </p>
-          </div>
-          <div class="introduce-left-image"></div>
-        </div>
-        <div class="introduce-right-container">
-          <div class="introduce-right-image"></div>
-        </div>
-      </div>
-      <!-- Service -->
-      <div id="service" class="service-container">
-        <div class="service-wrapper">
-          <div class="service-item-container"></div>
-          <div class="service-item-container"></div>
-          <div class="service-item-container">
-            <div class="service-item-header-content-container"></div>
-          </div>
-          <div class="service-item-container">
-            <div class="service-item-image"></div>
-            <div class="service-item-header-content-container">
-              <h1 class="service-item-header-content-number">01.</h1>
-              <p class="service-item-header-content-title">Lightning</p>
-            </div>
-            <div class="service-item-description-content-container">
-              <p class="service-item-description-content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-              <a href="#" class="service-item-viewmore-link"
-                >View more
-                <span> &rarr;</span>
-              </a>
-            </div>
-          </div>
-          <div class="service-item-container">
-            <div class="service-item-image"></div>
-            <div class="service-item-header-content-container">
-              <h1 class="service-item-header-content-number">02.</h1>
-              <p class="service-item-header-content-title">Secure</p>
-            </div>
-            <div class="service-item-description-content-container">
-              <p class="service-item-description-content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-              <a href="#" class="service-item-viewmore-link"
-                >View more
-                <span> &rarr;</span>
-              </a>
-            </div>
-          </div>
-          <div class="service-item-container">
-            <div class="service-item-image"></div>
-            <div class="service-item-header-content-container">
-              <h1 class="service-item-header-content-number">03.</h1>
-              <p class="service-item-header-content-title">Remote</p>
-            </div>
-            <div class="service-item-description-content-container">
-              <p class="service-item-description-content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-              <a href="#" class="service-item-viewmore-link"
-                >View more
-                <span> &rarr;</span>
-              </a>
-            </div>
-          </div>
-          <div class="service-item-container">
-            <div class="service-item-image"></div>
-            <div class="service-item-header-content-container">
-              <h1 class="service-item-header-content-number">04.</h1>
-              <p class="service-item-header-content-title">Sound</p>
-            </div>
-            <div class="service-item-description-content-container">
-              <p class="service-item-description-content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-              <a href="#" class="service-item-viewmore-link"
-                >View more
-                <span> &rarr;</span>
-              </a>
-            </div>
-          </div>
-          <div class="service-item-container">
-            <div class="service-item-image"></div>
-            <div class="service-item-header-content-container">
-              <h1 class="service-item-header-content-number">05.</h1>
-              <p class="service-item-header-content-title">Movie</p>
-            </div>
-            <div class="service-item-description-content-container">
-              <p class="service-item-description-content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-              <a href="#" class="service-item-viewmore-link"
-                >View more
-                <span> &rarr;</span>
-              </a>
-            </div>
-          </div>
-          <div class="service-item-container">
-            <div class="service-item-image"></div>
-            <div class="service-item-header-content-container">
-              <h1 class="service-item-header-content-number">06.</h1>
-              <p class="service-item-header-content-title">Curtain</p>
-            </div>
-            <div class="service-item-description-content-container">
-              <p class="service-item-description-content">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              </p>
-              <a href="#" class="service-item-viewmore-link"
-                >View more
-                <span> &rarr;</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div id="project" class="project-container">
-        <div class="project-sticky-title-container">
-          <h1 class="project-title">
-            "We believe that the quality of our surroundings has a direct
-            influence on the quality of our lives"
-          </h1>
-        </div>
-        <div class="project-item-wrapper">
-          <a href="#" class="project-item-container"></a>
-          <a href="#" class="project-item-container"></a>
-          <a href="#" class="project-item-container"></a>
-          <a href="#" class="project-item-container"></a>
-          <a href="#" class="project-item-container"></a>
-          <a href="#" class="project-item-container"></a>
-          <a href="#" class="project-item-container"></a>
-          <a href="#" class="project-item-container"></a>
-        </div>
-      </div>
-      <div id="showroom" class="showroom-container">
-        <div class="showroom-image-container">
-          <h1 class="showroom-image-title">showroom</h1>
-        </div>
-        <ul class="showroom-list">
-          <div class="showroom-list-item-image"></div>
-          <li class="showroom-list-item">
-            <a href="#" class="showroom-list-item-link">Moroso</a>
-          </li>
-          <li class="showroom-list-item">
-            <a href="#" class="showroom-list-item-link">Wall & deco</a>
-          </li>
-          <li class="showroom-list-item">
-            <a href="#" class="showroom-list-item-link">Nanimarquina</a>
-          </li>
-          <li class="showroom-list-item">
-            <a href="#" class="showroom-list-item-link">Porro</a>
-          </li>
-          <li class="showroom-list-item">
-            <a href="#" class="showroom-list-item-link">Fantoni</a>
-          </li>
-          <li class="showroom-list-item">
-            <a href="#" class="showroom-list-item-link">Diesel with Moroso</a>
-          </li>
-        </ul>
-      </div>
-    </div>
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
       integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
