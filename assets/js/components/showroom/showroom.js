@@ -53,7 +53,7 @@ function moveShowroomListItemImage(e) {
 showroomListItemLinks.forEach((showroomListItemLink, index) => {
   showroomListItemLink.addEventListener("mouseover", () => {
     showroomListItemLink.style.zIndex = "8";
-    showroomListItemImage.style.height = "50vh";
+    showroomListItemImage.style.height = "40vh";
     showroomListItemImage.style.backgroundImage = `url(${showroomListItemImageSources[index]})`;
   });
   showroomListItemLink.addEventListener("mouseleave", () => {

@@ -32,9 +32,9 @@
 
 .showroom-image-container:hover .showroom-image-title {
   color: var(--background-2);
-  letter-spacing: 3rem;
-  border: 0.1rem solid var(--background-2);
-  backdrop-filter: blur(20px);
+  /* letter-spacing: 3rem; */
+  /* border: 0.1rem solid var(--background-2); */
+  /* backdrop-filter: blur(20px); */
 }
 
 .showroom-image-title {
@@ -78,7 +78,7 @@
   transform: translate(-50%, -50%);
   left: 10px;
   top: 10px;
-  width: 50vw;
+  width: 40vw;
   height: 0;
   z-index: 8;
   background-size: cover;

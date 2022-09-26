@@ -3,6 +3,7 @@
 @import url(./components/header/header.css);
 @import url(./components/modal/modal.css);
 @import url(./components/cursor/cursor.css);
+@import url(./components/component/loader/loader.css);
 
 @import url(./components/component/videoBanner/videoBanner.css);
 @import url(./components/component/Introduce/introduce.css);
