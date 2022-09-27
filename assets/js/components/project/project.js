@@ -9,6 +9,7 @@ const projectImageSources = [
   "https://images.unsplash.com/photo-1663811396777-05505d999151?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1964&q=80",
 ];
 
+const projectTitle = document.querySelector(".project-title");
 const projectItems = document.querySelectorAll(".project-item-container");
 let projectItemCurrent = 0;
 let projectItemTarget = 0;
@@ -27,6 +28,7 @@ function projectItemAnimate() {
     lerp(projectItemCurrent, projectItemTarget, projectItemEase)
   ).toFixed(2);
   projectItemTarget = window.scrollY;
+  setTransform(projectTitle, `translateY(-${projectItemCurrent / 50}px)`);
   projectItems.forEach((projectItem, index) => {
     projectItem.style.backgroundImage = `url(${projectImageSources[index]})`;
     setTransform(projectItem, `translateY(-${projectItemCurrent / 8}px)`);

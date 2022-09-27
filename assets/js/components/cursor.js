@@ -52,3 +52,24 @@ labels.forEach((label) => {
     innerCursor.classList.remove("grow");
   });
 });
+
+document
+  .querySelector(".header-menu-button-icon")
+  .addEventListener("mouseover", () => {
+    innerCursor.classList.add("grow");
+  });
+document
+  .querySelector(".header-menu-button-icon")
+  .addEventListener("mouseleave", () => {
+    innerCursor.classList.remove("grow");
+  });
+document
+  .querySelector(".header-modal-menu-button-icon")
+  .addEventListener("mouseover", () => {
+    innerCursor.classList.add("grow");
+  });
+document
+  .querySelector(".header-modal-menu-button-icon")
+  .addEventListener("mouseleave", () => {
+    innerCursor.classList.remove("grow");
+  });

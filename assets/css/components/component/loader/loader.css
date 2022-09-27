@@ -25,6 +25,17 @@
   overflow: hidden;
 }
 
+.loader-container::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0%;
+  height: 1%;
+  background-color: var(--background-2);
+  animation: loaderNumberAfter 3s cubic-bezier(0.77, 0, 0.175, 1) 0.5s;
+  animation-fill-mode: forwards;
+}
+
 .loader-number-dozen {
   display: flex;
   flex-direction: column;
@@ -50,8 +61,8 @@
 .loader-number-dozen span,
 .loader-number-unit span {
   font-size: 8vw;
-  /* font-family: IvyMode; */
   font-weight: 100;
+  color: var(--background-2);
 }
 
 @keyframes loaderNUmberDozen {
@@ -68,5 +79,14 @@
   }
   100% {
     transform: translateY(var(--translate-unit));
+  }
+}
+
+@keyframes loaderNumberAfter {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
   }
 }

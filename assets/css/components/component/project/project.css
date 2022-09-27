@@ -10,15 +10,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  top: 0%;
+  top: 45%;
   z-index: 0;
+  margin-top: 20vh;
 }
 
 .project-item-wrapper {
   height: 100%;
   display: flex;
   flex-direction: column;
-  margin-top: 200vh;
+  margin-top: 300vh;
 }
 
 .project-title {
@@ -34,12 +35,8 @@
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 70vw;
+  width: 30vw;
   min-height: 80vh;
-  background-color: transparent;
   margin: 5rem;
   position: relative;
   z-index: 1;
@@ -47,16 +44,16 @@
 
 .project-item-container:nth-of-type(2n) {
   align-self: flex-end;
-  background-position: right;
+}
+
+.project-item-container:nth-of-type(2n + 1) {
+  align-self: center;
+}
+
+.project-item-container:nth-of-type(3n + 1) {
+  align-self: flex-start;
 }
 
 .project-item-container:nth-of-type(2n + 1) {
   background-position: left;
-}
-
-.project-item-container:nth-of-type(1),
-.project-item-container:nth-of-type(3),
-.project-item-container:nth-of-type(4),
-.project-item-container:nth-of-type(7) {
-  background-position: center;
 }
