@@ -33,6 +33,7 @@
 html {
   scroll-behavior: smooth;
   overscroll-behavior: auto;
+  cursor: none;
 }
 
 body {
@@ -41,6 +42,7 @@ body {
   overflow-x: hidden;
   background-color: var(--background);
   scroll-behavior: smooth;
+  cursor: none;
 }
 
 body::-webkit-scrollbar {
@@ -58,6 +60,7 @@ body::-webkit-scrollbar-thumb:hover {
 a {
   text-decoration: none;
   color: var(--black);
+  cursor: none;
 }
 
 /* Animation */

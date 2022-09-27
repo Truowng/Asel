@@ -19,9 +19,17 @@ let labels = Array.from(document.querySelectorAll("label"));
 
 links.forEach((link) => {
   link.addEventListener("mouseover", () => {
+    document.querySelector(".inner-cursor p").style.opacity = `1`;
+    document.querySelector(
+      ".inner-cursor p"
+    ).style.transform = `rotate(-45deg) scale(1)`;
     innerCursor.classList.add("grow");
   });
   link.addEventListener("mouseleave", () => {
+    document.querySelector(".inner-cursor p").style.opacity = `0`;
+    document.querySelector(
+      ".inner-cursor p"
+    ).style.transform = `rotate(-45deg) scale(0)`;
     innerCursor.classList.remove("grow");
   });
 });
