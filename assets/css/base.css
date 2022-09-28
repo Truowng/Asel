@@ -34,6 +34,7 @@ html {
   scroll-behavior: smooth;
   overscroll-behavior: auto;
   cursor: none;
+  scrollbar-width: 0;
 }
 
 body {
@@ -43,6 +44,7 @@ body {
   background-color: var(--background);
   scroll-behavior: smooth;
   cursor: none;
+  scrollbar-width: 0;
 }
 
 body::-webkit-scrollbar {

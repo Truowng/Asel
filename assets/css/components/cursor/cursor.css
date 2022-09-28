@@ -6,8 +6,8 @@
   transform: translate(-50%, -50%) rotate(45deg);
   border: 0.1rem solid var(--white);
   pointer-events: none;
-  transition: width cubic-bezier(0.77, 0, 0.175, 1) 0.6s,
-    height cubic-bezier(0.77, 0, 0.175, 1) 0.6s;
+  transition: width cubic-bezier(0.77, 0, 0.175, 1) 0.3s,
+    height cubic-bezier(0.77, 0, 0.175, 1) 0.3s;
   z-index: 10;
   display: flex;
   justify-content: center;
@@ -17,8 +17,8 @@
 .inner-cursor.grow {
   width: 6rem;
   height: 6rem;
-  transition: width cubic-bezier(0.77, 0, 0.175, 1) 0.6s,
-    height cubic-bezier(0.77, 0, 0.175, 1) 0.6s;
+  transition: width cubic-bezier(0.77, 0, 0.175, 1) 0.3s,
+    height cubic-bezier(0.77, 0, 0.175, 1) 0.3s;
 }
 
 .inner-cursor.drag {
@@ -28,13 +28,15 @@
 }
 
 .inner-cursor p {
-  font-size: 3rem;
+  font-size: 3.5rem;
   letter-spacing: 0.2rem;
   color: #fff;
   mix-blend-mode: difference;
-  transition: all cubic-bezier(0.77, 0, 0.175, 1) 0.6s;
+  transition: all cubic-bezier(0.77, 0, 0.175, 1) 0.3s;
   transform: rotate(-45deg);
   opacity: 0;
+  font-family: PPEiko;
+  font-weight: 100;
 }
 
 .outer-cursor {
