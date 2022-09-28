@@ -7,6 +7,9 @@ const menuItems = document.querySelectorAll(".menu-item span");
 
 menuButton.addEventListener("click", show);
 menuModalButton.addEventListener("click", hide);
+menuItems.forEach((menuItem) => {
+  menuItem.addEventListener("click", hide);
+});
 
 function show() {
   modalContainer.style.transform = "translateY(0)";
